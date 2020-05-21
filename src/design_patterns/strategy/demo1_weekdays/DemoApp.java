@@ -1,4 +1,4 @@
-package design_patterns.strategy.demo4_weekdays;
+package design_patterns.strategy.demo1_weekdays;
 
 public class DemoApp {
     public static void main(String[] args) {

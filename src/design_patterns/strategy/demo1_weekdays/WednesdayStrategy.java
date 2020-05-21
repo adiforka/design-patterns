@@ -1,4 +1,4 @@
-package design_patterns.strategy.demo4_weekdays;
+package design_patterns.strategy.demo1_weekdays;
 
 public class WednesdayStrategy implements WeekdayStrategy {
     @Override

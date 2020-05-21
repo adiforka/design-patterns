@@ -1,4 +1,4 @@
-package design_patterns.builder.demo10_generic_builder_player;
+package design_patterns.builder.demo10_player_builder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +25,8 @@ public class Player {
         position = builder.position;
         games.addAll(builder.games);
     }
+
+
 
     public String getFirstName() {
         return firstName;
@@ -113,23 +115,3 @@ public class Player {
     }
 }
 
-class Game {
-    private String description;
-
-    public Game() {
-
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    @Override
-    public String toString() {
-        return description;
-    }
-}

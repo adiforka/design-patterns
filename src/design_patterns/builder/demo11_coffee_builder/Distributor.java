@@ -1,4 +1,4 @@
-package design_patterns.builder.demo11.coffee_builder;
+package design_patterns.builder.demo11_coffee_builder;
 
 
 public class Distributor {

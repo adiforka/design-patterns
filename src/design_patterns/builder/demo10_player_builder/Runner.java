@@ -1,5 +1,4 @@
-package design_patterns.builder.demo10_generic_builder_player;
-
+package design_patterns.builder.demo10_player_builder;
 
 
 public class Runner {

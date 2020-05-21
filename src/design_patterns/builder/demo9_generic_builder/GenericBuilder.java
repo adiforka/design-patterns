@@ -10,7 +10,7 @@ public class GenericBuilder<T> {
 
 	private final Supplier<T> instantiator;
 
-	private List<Consumer<T>> instanceModifiers = new ArrayList<>();
+	private final List<Consumer<T>> instanceModifiers = new ArrayList<>();
 
 	private GenericBuilder(Supplier<T> instantiator) {
 		this.instantiator = instantiator;

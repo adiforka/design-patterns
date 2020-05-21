@@ -12,4 +12,8 @@ public class PlainSingleton {
         return instance;
     }
 
+    public void doStuff() {
+        System.out.println("Doing stuff");
+    }
+
 }

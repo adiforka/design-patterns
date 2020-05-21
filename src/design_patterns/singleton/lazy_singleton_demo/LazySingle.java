@@ -1,15 +1,7 @@
-package design_patterns.singleton;
+package design_patterns.singleton.lazy_singleton_demo;
 
-public class LazySingletonTest {
-    public static void main(String[] args) {
+public class LazySingle {
 
-        LazySingle lazySingle = LazySingle.getInstance();
-        lazySingle.print(lazySingle.getText());
-
-    }
-}
-
-class LazySingle {
 
     private static LazySingle lazySingle;
     private static boolean instantiated = false;

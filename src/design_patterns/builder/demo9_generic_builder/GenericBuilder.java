@@ -21,13 +21,15 @@ public class GenericBuilder<T> {
 	}
 
 	public <V> GenericBuilder<T> with(BiConsumer<T, V> biConsumer, V value) {
-		instanceModifiers.add(consumer -> biConsumer.accept(consumer, value));
+
+		//ok, now I get it: it's a consumer of T, so it gets an instance ot T
+		instanceModifiers.add(t -> biConsumer.accept(t, value));
 		return this;
 	}
 
 	public T build() {
 		T t = instantiator.get();
-		instanceModifiers.forEach(modifier -> modifier.accept(t));
+		instanceModifiers.forEach(consumer -> consumer.accept(t));
 		instanceModifiers.clear();
 		return t;
 	}

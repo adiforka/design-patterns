@@ -1,4 +1,4 @@
-package singlemingle_demo;
+package design_patterns.singleton.singlemingle_demo_lazy_instantiation;
 
 public class SingleMingle {
 

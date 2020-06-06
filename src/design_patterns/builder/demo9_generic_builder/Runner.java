@@ -5,7 +5,7 @@ public class Runner {
 
 
         Aircraft aircraft = GenericBuilder.of(Aircraft::new)
-                .with(Aircraft::setThrust, "moderate")
+                .with((ac, value) -> ac.setThrust(value), "moderate")
                 .with(Aircraft::setDesignation, "assault")
                 .build();
 

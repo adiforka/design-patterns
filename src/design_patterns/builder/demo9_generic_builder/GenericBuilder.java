@@ -20,9 +20,12 @@ public class GenericBuilder<T> {
 		return new GenericBuilder<T>(instantiator);
 	}
 
+	//the first argument here will be a definition of what happens when biConsumer's accept method is called:
+	//i.e., a setter will be called on an instance of T, and will receive an argument of type V
 	public <V> GenericBuilder<T> with(BiConsumer<T, V> biConsumer, V value) {
 
 		//ok, now I get it: it's a consumer of T, so it gets an instance ot T
+		//we're providing the implementation of consumer's accept, which get's called in build below
 		instanceModifiers.add(t -> biConsumer.accept(t, value));
 		return this;
 	}

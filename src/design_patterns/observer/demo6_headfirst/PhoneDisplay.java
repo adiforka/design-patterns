@@ -5,7 +5,7 @@ public class PhoneDisplay implements Observer, Display {
     private final WeatherStation station;
 
     //coupling concretions breaks the dependency inversion principle! but it's part of this impl of
-    //the OP, and thanks to that we can call the implementation=specific methods of the observable
+    //the OP, and thanks to that we can call the implementation-specific methods of the observable
     //(the subject) in the update() of observer (and not just some generic getState())
     public PhoneDisplay(WeatherStation station) {
         this.station = station;

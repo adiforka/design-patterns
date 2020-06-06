@@ -13,7 +13,7 @@ public class Runner {
                 declared. But you cannot use static method references for instance methods since you cannot call instance
                 methods on a type(statically). Here's the rub: maybe we're actually using option 3) from the oracle
                 tutorial table: "Reference to an instance method of an arbitrary object of a particular type"? That just
-                looks like it a static method reference, but it would actually be an instance method reference for that
+                looks like it's a static method reference, but it would actually be an instance method reference for that
                 "arbitrary object" (arbitrary meaning that it is not assigned to a variable) of a particular type (meaning
                 that it has an actual particular type).
                  */

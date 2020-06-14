@@ -10,7 +10,7 @@ public class TomatoSauce extends ToppingDecorator {
     public String getDescription() {
         return tempPizza.getDescription() + ", Tomato sauce";
     }
-Espresso
+
     @Override
     public double getCost() {
         return tempPizza.getCost() + 1.50;

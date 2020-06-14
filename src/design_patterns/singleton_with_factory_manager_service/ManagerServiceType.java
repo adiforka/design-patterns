@@ -4,6 +4,13 @@ public enum ManagerServiceType {
 
     LOCAL("local"), GLOBAL("global");
 
+    private final String desc;
+
     private ManagerServiceType(String desc) {
+        this.desc = desc;
+    }
+
+    public String getDesc() {
+        return desc;
     }
 }

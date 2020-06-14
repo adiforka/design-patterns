@@ -17,7 +17,7 @@ public class GenericBuilder<T> {
 	}
 
 	public static <T> GenericBuilder<T> of(Supplier<T> instantiator) {
-		return new GenericBuilder<T>(instantiator);
+		return new GenericBuilder<>(instantiator);
 	}
 
 	//the first argument here will be a definition of what happens when biConsumer's accept method is called:

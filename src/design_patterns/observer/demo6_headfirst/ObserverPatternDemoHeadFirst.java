@@ -17,7 +17,7 @@ package design_patterns.observer.demo6_headfirst;
 
 //oddly, the HeadFirst impl of OP has it that a concrete observer has an instance of its observable
 //which you pass to into its constructor (so now its bidirectional: the observer is registered with
-//the observable (in its list, array etc.), and the observer has an instance of the thing its observing
+//the observable (in its list, array etc.), and the observer has an instance of the thing it's observing
 //that way it not only knows that something has changed (because something called its update method, but
 //but also what changed (because that sth is passed to the update function as argument)
 public class ObserverPatternDemoHeadFirst {

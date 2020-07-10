@@ -41,7 +41,7 @@ class BigShot {
     }
 
     public void notifyObserver() {
-        this.instantiateObserver();
-        this.observer.update();
+        instantiateObserver();
+        observer.update();
     }
 }

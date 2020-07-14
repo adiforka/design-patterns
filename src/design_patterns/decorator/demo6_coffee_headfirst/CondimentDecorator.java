@@ -9,5 +9,4 @@ public abstract class CondimentDecorator extends Beverage {
         super(description);
     }
 
-    public abstract double getCost();
 }

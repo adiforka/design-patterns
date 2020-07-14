@@ -5,13 +5,13 @@ class CaramelDecorator extends CondimentDecorator {
 
     public CaramelDecorator(Beverage beverage, String description, double cost) {
         super(description);
-        this.beverage = beverage;
+        super.beverage = beverage;
         this.cost = cost;
     }
 
     //the cost of the caramel cannot be calculated without also getting the cost of the beverage it wraps
     //hence: decorator --> it is not standalone (although you could have a "reset" decorator that purposefully
-    //ignores what the thing it wraps, and reports only what it itself to the thing that wraps it
+    //ignores what the thing it wraps, and reports only what it itself does to the thing that wraps it
     //e.g. if you tell it to multiply by 0, it won't matter what value is inside the object it wraps (return
     //will be 0 anyway)
 

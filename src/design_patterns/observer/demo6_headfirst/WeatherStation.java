@@ -8,7 +8,6 @@ public class WeatherStation implements Observable {
     private double temperature;
     private final List<Observer> observers = new ArrayList<>();
 
-
     @Override
     public void addObserver(Observer observer) {
         observers.add(observer);

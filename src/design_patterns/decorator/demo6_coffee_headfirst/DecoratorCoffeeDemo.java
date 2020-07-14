@@ -24,6 +24,8 @@ public class DecoratorCoffeeDemo {
 
         System.out.println("Cost of decaf with soy: " + beverage.getCost());
 
+        System.out.println("DESC: " + beverage.getDescription());
+
         //espresso with soy and caramel (decorator wrapped around another decorator
         //wrapped around a component)
         Beverage beverage1 = new CaramelDecorator(
